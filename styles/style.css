@@ -1,0 +1,341 @@
+/* ============================================
+---------------  Fonts   ----------------------  
+===============================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* ============================================
+------   Common Styles or utilities  ---------
+===============================================*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+hr{
+    border: .5px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+
+/* ============================================
+*************  Header Styles  ***********  
+===============================================*/
+
+.nav-bar {
+    background: #562EFF;
+}
+.new {
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding: 8px 0px;
+    width: 919px;
+}
+
+.logos {
+    display: flex;
+    width: 446px;
+    justify-content: flex-start;
+}
+
+.logos img {
+    width: 43px;
+    height: 50px;
+}
+
+.logos p {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 20px;
+}
+.nav-detail {
+    display: flex;
+    width: 429px;
+    flex-direction: row-reverse;
+}
+
+.nav-detail ul {
+    list-style: none;
+    display: flex;
+    margin-top: 16px;
+}
+
+.nav-detail ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+*************  Top Players Styles   ***********  
+===============================================*/
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color:#562EFF;
+    font-size: 24px;
+    margin: 3px 0px 40px 0px;
+    font-weight: 500;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ============================================
+$$$$$$$$$$$$$  Top Blogs Styles  $$$$$$$$$$$$$$  
+===============================================*/
+.blogs{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+    width: 418px;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 500;
+}
+.blog-author{
+    font-weight: 400;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.blog-author a{
+    font-size: 16px;
+    color: #562EFF;
+    text-decoration: none;
+}
+/* ============================================
+$$$$$$$$$$$$$  Lates Courses Styles  $$$$$$$$$$ 
+===============================================*/
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course {
+    width: 244px;
+    height: 297px;
+    padding: 0px  0px 0px 19px;
+    box-shadow: 0px 0px 9px -7px #000;
+    margin: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+.course-banner {
+    padding: 20px 0px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-title {
+    font-weight: 500;
+    line-height: 33px;
+}
+.course-author {
+    color: #ED6B4F;
+}
+.course-info{
+    display: flex;
+    width: 233px;
+    align-items:center;
+    justify-content: space-between;
+}
+.course-info span {
+    color: #757575;
+}
+.fa-star{
+    font-size: 12px;
+    
+}
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+    opacity: 0.25;
+}
+.course-duration {
+    background-color: #ffe4e8;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #FF4A60;
+    font-weight: 500;
+}
+.course-duration i {
+    margin-right: 4px;
+}
+
+
+
+/* ============================================
+$$$$$$$$$$$$$  Media Queries Styles $$$$$$$$$$ 
+===============================================*/
+
+/* mobile Devices */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .section-title {
+        margin: 0px 0px 20px 20px;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* palayers */
+    .player {
+        flex-direction: column;
+        background: #e0e0e0;
+        padding: 20px 0px;
+        border-radius: 15px;
+        margin: 0px 20px;
+    }
+    .player-name {
+        font-size: 25px;
+        font-weight: 600;
+        color: #545554;
+        margin-top: 10px;
+    }
+    .nav-bar{
+        display: none;
+    }
+    /* blogs  */
+    .blog {
+        background: #E9F9FC;
+        width: 465px;
+        height: 130px;
+        padding: 20px;
+        margin: auto;
+        border-radius: 10px;
+    }
+    /* courses */
+    .course {
+        width: 465px;
+        margin: auto;
+    }
+    
+    .courses {
+        grid-row-gap: 30px;
+    }
+    .course .course-banner img {
+        width: 300px;
+        height: 146px;
+    }
+}
+
+
+/* tablet Devices */
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .section-title {
+        margin: 0px 0px 20px 20px;
+    }
+    .top-players {
+        padding: 20px;
+    }
+    .players{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        width: 715px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .blog-title {
+        font-size: 30px;
+        line-height: 35px;
+        width: 273px;
+        margin-left: 20px;
+    }
+    
+    .blog-author {
+        margin-left: 20px;
+        line-height: 35px;
+    }
+    
+    .blog .thumbnail img {
+        width: 216px;
+        height: 144px;
+    }
+    .nav-bar, .courses{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
